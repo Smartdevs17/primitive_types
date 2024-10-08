@@ -65,7 +65,8 @@ fn main() {
     //String is a growable, heap-allocated data structure
     //&str is an immutable view into a string
     //String is a type, &str is a type
-    
+    //String [growable, heap-allocated, mutable, owned string type]
+    //&str [immutable, view into a string, can be coerced into a String]
     //Example of a String
     let mut s = String::from("Hello");
     s.push_str(", world!");
@@ -101,6 +102,12 @@ fn main() {
     let animals: &[&String] = &[&"Dog".to_string(), &"Cat".to_string(), &"Bird".to_string(), &"Rabbit".to_string()];
     println!("animals = {:?}", animals);
 
-    
+    let mut say_something: String = String::from("Say somethinng");
+    say_something.push_str(" to the world");
+    println!("I told you to {}", say_something);
+
+    let string: String = String::from("Hello World");
+    let slice: &str = &string;
+    println!("Slice value: {}", slice);
 }
 
