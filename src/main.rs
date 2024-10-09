@@ -12,6 +12,12 @@
 //comound Data Types
 //Tuple, Array, Struct, Enum, Vector, Option, Result
 
+//Main function is our entry point to the program and it contains the code that is executed when the program is run
+//fn is a function keyword
+//main is the name of the function
+//() is the parameter list
+//-> is the return type
+//{} is the body of the function
 fn main() {
     //Tuple is a collection of values of different types
     let x: (u8, bool, f64, &str) = (10, true, 10.5, "Hello");
@@ -109,5 +115,72 @@ fn main() {
     let string: String = String::from("Hello World");
     let slice: &str = &string;
     println!("Slice value: {}", slice);
+
+    say_hello();
+    say_goodbye();
+    print_value(say_something);
+    print_slice(animals);
+
+    let sum = add_number(10, 20);
+    println!("sum = {}", sum);
+
+    let sub = sub_number(10, 5);
+    println!("sub = {}", sub);
+
+    let sub_1 = sub_number(3, 5);
+    println!("sub_1 = {}", sub_1);
+
+    let mul = mul_number(5, 2);
+    println!("mul = {}", mul);
+
+    let div = div_number(10.0, 2.0);
+    println!("div = {}", div);
+
+    let div_1 = div_number(10.0, 3.0);
+    println!("div_1 = {}", div_1);
+
+    human_identity(String::from("John"), 20, 170, 60);  
+}
+
+
+//functions
+fn print_value(value: String) {
+    println!("===========Value: {}", value);
+}
+
+fn print_slice(slice: &[&String]) {
+    println!("===========Slice: {:?}", slice);
+}
+
+fn say_hello() {
+    println!("Hello");
+}
+
+fn say_goodbye() {
+    println!("===========>>>>>>>>>Goodbye");
+}
+
+fn add_number( a: u32, b: u32) -> u32{
+    return a + b;
+}
+
+
+fn sub_number( a: i32, b: i32) -> i32{
+    return a - b;
+}
+
+fn mul_number( a: u32, b: u32) -> u32{
+    return a * b;
+}
+
+fn div_number( a: f32, b: f32) -> f32{
+    return a / b;
+}
+
+fn human_identity(name: String, age: u8, height: u32, weight: u32) {
+    println!("Name: {}", name);
+    println!("Age: {}", age);
+    println!("Height: {}", height);
+    println!("Weight: {}", weight);
 }
 
