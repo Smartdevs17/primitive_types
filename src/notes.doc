@@ -1,0 +1,52 @@
+//Primitive Types
+//Integers: u8, i8, u16, i16, u32, i32, u64, i64, u128, i128
+//Floats: f32, f64
+//Boolean: bool
+//Characters: char
+//Tuples: (i32, f64, char)
+//Arrays: [i32; 5]
+
+//Variables are immutable by default
+//To make a variable mutable, we use the mut keyword
+//Variables are block scoped
+//Variables are type inferred
+
+
+//Constants are immutable by default
+//Constants are block scoped
+//Constants are type annotated
+//Constants cannot be declared inside a function
+//Constants can be declared inside a function with the static keyword
+
+
+//String is a collection of characters
+//String is a type of reference
+//String is a growable and heap allocated data structure
+//String is a mutable sequence of characters
+//String is a UTF-8 encoded, Unicode-compatible text type
+
+//&str is a type of reference
+//&str is a view into a string
+//&str is a non-owning reference to a contiguous sequence of elements in a collection
+//&str is a view into a string
+//&str is a non-owning reference to a contiguous sequence of elements in a collection
+
+//Slices are a type of reference
+//Slices are a view into a string or array
+//Slices are a non-owning reference to a contiguous sequence of elements in a collection
+//Slices are a view into a string or array
+//Slices are a non-owning reference to a contiguous sequence of elements in a collection
+
+
+//Functions are block scoped
+//Functions are type inferred
+//Functions can return a value
+//Functions can take parameters
+//Functions can take parameters by value or by reference
+
+//Expressions are pieces of code that return a value
+//Statements are instructions that perform actions
+//Expressions can be used in statements
+//Statements do not return a value
+//Example of an expression: 1 + 2
+//Example of a statement: let x = 1 + 2;
