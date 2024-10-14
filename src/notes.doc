@@ -50,3 +50,10 @@
 //Statements do not return a value
 //Example of an expression: 1 + 2
 //Example of a statement: let x = 1 + 2;
+
+//Ownership, Borrowing and References
+
+//Ownership
+C, C++ -> Memory management control issues
+Garbage collection solve this issue, but created a new issue
+which is stopping and resuming the program
