@@ -55,5 +55,26 @@
 
 //Ownership
 C, C++ -> Memory management control issues
-Garbage collection solve this issue, but created a new issue
+Garbage collection solve this issue, but created a new issue(freezing the program)
 which is stopping and resuming the program
+
+Rust -> Ownership solves this issue
+what is ownership?
+ownership is a set of rules that govern how a Rust program manages memory
+Every variable in Rust has a variable that represents its ownership
+Every value has a single owner(every variable has a single value and it is its single owner)
+When the owner goes out of scope, the value is dropped
+3 Ownership rules
+1. Each value has a single owner
+2. The owner of the value must be in scope
+3. When the owner goes out of scope, the value is dropped
+
+Examples of the 3 ownership rules
+fn main() {
+    let x = 10;
+    let y = x;
+    println!("x = {}, y = {}", x, y);
+}
+
+
+
